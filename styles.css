@@ -1,0 +1,133 @@
+.about__section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .about__content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about__image {
+    max-width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .about__text {
+    flex: 1;
+  }
+  
+  .about__text h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  .about__text h2 {
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .about__text p {
+    margin-bottom: 1rem;
+    color: #555;
+    line-height: 1.6;
+  
+  } .reviews__section {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .reviews__container {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .review {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .review p {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  .review span {
+    color: #ffc107;
+    font-size: 1.2rem;
+  }
+  :root {
+    --primary-color: #1e90ff; /* Azul */
+    --secondary-color: #2ecc71; /* Verde */
+    --text-color: #333333;
+    --white-color: #ffffff;
+  }
+
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: var(--text-color);
+  }
+
+  .navbar {
+    background-color: var(--primary-color);
+  }
+
+
+
+  .navbar-brand {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .navbar-brand span {
+    color: var(--secondary-color);
+  }
+
+  .navbar-nav .nav-link {
+    color: var(--white-color);
+  }
+
+  .header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  .header h1 span {
+      color: var(--secondary-color);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .services .icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }

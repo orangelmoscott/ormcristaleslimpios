@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>ORM Cristales - Limpieza de Cristales Profesional</title>
+  <style>
+    :root {
+      --primary-color: #1e90ff;
+      --secondary-color: #2ecc71;
+      --text-color: #333333;
+      --white-color: #ffffff;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f9f9f9;
+      color: var(--text-color);
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+    }
+
+    .navbar-brand {
+      color: var(--white-color);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar-brand span {
+      color: var(--secondary-color);
+    }
+
+    .navbar-nav .nav-link {
+      color: var(--white-color);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--white-color);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .header h1 span {
+      color: var(--secondary-color);
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .services .icon {
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+
+    .about__section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .about__image {
+      max-width: 40%;
+      border-radius: 10px;
+    }
+
+    .about__text {
+      flex: 1;
+    }
+
+    .about__text h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .reviews__section {
+      padding: 2rem 1rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .reviews__container {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .review {
+      padding: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .contact-form {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--white-color);
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header {
+        padding: 2rem 1rem;
+      }
+
+      .about__section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about__image {
+        max-width: 90%;
+      }
+
+      .reviews__container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">ORM<span>Cristales</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="header">
+  <div class="container">
+    <h1>¡Limpieza de cristales con <span>ORM Cristales</span>!</h1>
+    <p>Expertos en limpieza de cristales para oficinas, domicilios y tiendas en Madrid. Brillamos para ti.</p>
+    <h2>Contáctanos por el numero de  TLF 666 77 19 62</h2>
+    <a href="#contact" class="btn btn-primary">Solicita tu presupuesto</a>
+    <a href="https://wa.me/34666771962" class="btn btn-primary" target="_blank">WhatsApp</a>
+  </div>
+</header>
+
+<section id="about" class="about__section">
+  <img src="assets/limpiezadecristales.jpg" alt="Cristalero en acción" class="about__image">
+  <div class="about__text">
+    <h2>¿Por qué elegirnos?</h2>
+    <p> En ORM Cristales, ofrecemos servicios de <strong>limpieza de cristales a domicilio</strong> con la máxima profesionalidad y atención al detalle. Ya sea para tu hogar, oficina o tienda, garantizamos resultados impecables y un servicio rápido y eficiente.
+      Pregunta por un <strong>presupuesto personalizado</strong> llamando al <a href="https://wa.me/34600123456?text=Hola%2C%20estoy%20interesado%20en%20sus%20servicios%20de%20limpieza%20de%20cristales" target="_blank">
+        Contáctanos por WhatsApp
+      </a>
+       o escribiéndonos por WhatsApp. ¡Déjanos cuidar de tus cristales y disfrutarás de una vista impecable!
+    </p>
+  </div>
+</section>
+
+<section id="about" class="about__section">
+  <img src="assets/limpiezadecristalesmadird.jpg" alt="Cristalero en acción" class="about__image">
+  <div class="about__text">
+    <h2>Limpieza Profesional de <span>Cristales</span> en Madrid</h2>
+    <p> 
+          Expertos en la limpieza de cristales para oficinas, domicilios y
+          tiendas. Solicita tu presupuesto personalizado y disfruta de un
+          servicio impecable.
+          Vitrinas limpias para destacar tus productos y atraer clientes.
+    </p>
+      </div>
+  </div>
+</section>
+<section id="about" class="about__section">
+  <img src="assets/cristaleslimpios.jpg" alt="Cristalero en acción" class="about__image">
+  <div class="about__text">
+    <h2>Descubre ORM Cristales</h2>
+    <p>
+      En ORM Cristales, nos enorgullece ser tu <strong>aliado confiable en la limpieza de cristales</strong>. Con un equipo de profesionales altamente capacitados y equipamiento de última generación, transformamos cualquier superficie de vidrio en una ventana al brillo y la claridad.
+      Nuestro compromiso es ofrecer un servicio <strong>seguro, eficiente y personalizado</strong> para que cada cliente quede completamente satisfecho.
+      Ya sea en edificios residenciales, oficinas o tiendas, nos aseguramos de que tus cristales reflejen la calidad y dedicación que nos definen.
+    </p>
+  </div>
+</section>
+
+
+
+<section id="services" class="services py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="icon mb-3"><i class="fa-solid fa-building"></i></div>
+        <h4>Limpieza de Oficinas</h4>
+      </div>
+      <div class="col-md-4">
+        <div class="icon mb-3"><i class="fa-solid fa-home"></i></div>
+        <h4>Limpieza de Domicilios</h4>
+      </div>
+      <div class="col-md-4">
+        <div class="icon mb-3"><i class="fa-solid fa-store"></i></div>
+        <h4>Limpieza de Tiendas</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews__section">
+  <h2>Opiniones</h2>
+  <div class="reviews__container">
+    <div class="review">
+      <p>"Servicio impecable. Muy recomendados."</p>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+    <div class="review">
+      <p>"Amables y puntuales."</p>
+      <span>⭐⭐⭐⭐⭐</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="contact-form">
+          <form id = "contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 ORM Cristales. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script >
+  document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  try {
+      const response = await fetch('https://serverormcristales.onrender.com/cliente', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ name, email, message }),
+      });
+      
+      const result = await response.json();
+      alert(result.message);
+
+      // Limpiar los campos después de enviar
+      document.getElementById('contact-form').reset();
+  } catch (error) {
+      alert('Hubo un error al enviar el mensaje');
+  }
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+
+    
