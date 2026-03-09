@@ -63,6 +63,7 @@ form.addEventListener('submit', async function (e) {
 
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
+  const telefono = document.getElementById('telefono').value;
   const message = document.getElementById('message').value;
 
   // Change button state
@@ -81,7 +82,7 @@ form.addEventListener('submit', async function (e) {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ name, email, message }),
+      body: JSON.stringify({ name, email, telefono, message }),
       signal: controller.signal
     });
 
