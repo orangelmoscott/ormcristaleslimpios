@@ -1,56 +1,111 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
+// Initialize Lucide Icons
+lucide.createIcons();
 
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
+// --- Navbar Scroll Effect & Mobile Menu ---
+const navbar = document.getElementById("navbar");
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });
 
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
+mobileMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("active");
 });
 
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
+// Close mobile menu when a link is clicked
+const mobileLinks = mobileMenu.querySelectorAll("a");
+mobileLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+  });
+});
+
+
+// --- Intersection Observer for Scroll Animations ---
+// We replace ScrollReveal with a native robust API for better performance and SEO
+
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.15
 };
 
-ScrollReveal().reveal(".header__image img", {
-  ...scrollRevealOption,
-  origin: "right",
-});
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      // Stop observing once animated
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
 
-ScrollReveal().reveal(".header__content h1", {
-  ...scrollRevealOption,
-  delay: 500,
-});
+const elementsToAnimate = document.querySelectorAll('.fade-in-up, .slide-in-left, .slide-in-right, .slide-in-up');
 
-ScrollReveal().reveal(".header__content p", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-ScrollReveal().reveal(".header__content form", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-
-ScrollReveal().reveal(".header__content .bar", {
-  ...scrollRevealOption,
-  delay: 2000,
-});
-
-ScrollReveal().reveal(".header__image__card", {
-  duration: 1000,
-  interval: 500,
-  delay: 2500,
+elementsToAnimate.forEach(el => {
+  observer.observe(el);
 });
 
 
+// --- Contact Form Submission ---
+const form = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+const formFeedback = document.getElementById('form-feedback');
 
+form.addEventListener('submit', async function (e) {
+  e.preventDefault();
 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+
+  // Change button state
+  const originalBtnText = submitBtn.innerHTML;
+  submitBtn.innerHTML = '<span>Enviando... <i data-lucide="loader" class="icon-sm spin"></i></span>';
+  submitBtn.disabled = true;
+  lucide.createIcons(); // render the loader icon
+
+  try {
+    const response = await fetch('https://serverormcristales.onrender.com/cliente', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name, email, message }),
+    });
+
+    const result = await response.json();
+
+    // Show success
+    formFeedback.classList.remove('hidden');
+    formFeedback.textContent = result.message || "Mensaje enviado exitosamente.";
+    formFeedback.style.backgroundColor = '#dcfce7';
+    formFeedback.style.color = '#166534';
+
+    // Clear form
+    form.reset();
+
+  } catch (error) {
+    // Show error
+    formFeedback.classList.remove('hidden');
+    formFeedback.textContent = "Hubo un error al enviar el mensaje. Por favor intenta de nuevo.";
+    formFeedback.style.backgroundColor = '#fee2e2';
+    formFeedback.style.color = '#991b1b';
+  } finally {
+    // Reset button state
+    submitBtn.innerHTML = originalBtnText;
+    submitBtn.disabled = false;
+    lucide.createIcons(); // re-render the send icon
+
+    // Hide feedback after 5 seconds
+    setTimeout(() => {
+      formFeedback.classList.add('hidden');
+    }, 5000);
+  }
+});
