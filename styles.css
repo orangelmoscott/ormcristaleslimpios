@@ -770,6 +770,16 @@ ul {
   animation: pulse-animation 2s infinite;
 }
 
+.spin {
+  animation: spin-animation 1s linear infinite;
+}
+
+@keyframes spin-animation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes pulse-animation {
   0% {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);

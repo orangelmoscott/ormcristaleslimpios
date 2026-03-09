@@ -71,6 +71,10 @@ form.addEventListener('submit', async function (e) {
   submitBtn.disabled = true;
   lucide.createIcons(); // render the loader icon
 
+  // Setup timeout for the fetch request (15 seconds)
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+
   try {
     const response = await fetch('https://serverormcristales.onrender.com/cliente', {
       method: 'POST',
@@ -78,7 +82,15 @@ form.addEventListener('submit', async function (e) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({ name, email, message }),
+      signal: controller.signal
     });
+
+    clearTimeout(timeoutId);
+
+    // Check if the response is actually ok (e.g. not a 502/504 error)
+    if (!response.ok) {
+      throw new Error(`HTTP Error status: ${response.status}`);
+    }
 
     const result = await response.json();
 
@@ -92,9 +104,18 @@ form.addEventListener('submit', async function (e) {
     form.reset();
 
   } catch (error) {
+    clearTimeout(timeoutId);
+
     // Show error
     formFeedback.classList.remove('hidden');
-    formFeedback.textContent = "Hubo un error al enviar el mensaje. Por favor intenta de nuevo.";
+
+    // Provide a specific message if it was a timeout
+    if (error.name === 'AbortError') {
+      formFeedback.textContent = "El servidor parece estar dormido o tardando mucho en responder. Por favor, intenta usar el botón de WhatsApp temporalmente.";
+    } else {
+      formFeedback.textContent = "Hubo un error al enviar el mensaje. Por favor intenta de nuevo más tarde o contáctanos por WhatsApp.";
+    }
+
     formFeedback.style.backgroundColor = '#fee2e2';
     formFeedback.style.color = '#991b1b';
   } finally {
