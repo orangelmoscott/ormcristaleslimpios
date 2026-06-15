@@ -58,7 +58,8 @@ const form = document.getElementById('contact-form');
 const submitBtn = document.getElementById('submit-btn');
 const formFeedback = document.getElementById('form-feedback');
 
-form.addEventListener('submit', async function (e) {
+if (form) {
+  form.addEventListener('submit', async function (e) {
   e.preventDefault();
 
   const name = document.getElementById('name').value;
@@ -130,4 +131,5 @@ form.addEventListener('submit', async function (e) {
       formFeedback.classList.add('hidden');
     }, 5000);
   }
-});
+  });
+}
