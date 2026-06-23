@@ -25,19 +25,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Limpieza de cristales para tiendas y comercios",
+    "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-tiendas-madrid.html#service",
+    "serviceType": "Limpieza de Cristales para Tiendas y Comercios",
     "name": "Limpieza de Cristales en Tiendas y Comercios Madrid",
-    "description": "Servicio profesional de limpieza de cristales, escaparates y vitrinas para tiendas y comercios en Madrid. Resultados impecables sin marcas.",
+    "description": "Servicio profesional de limpieza de cristales, escaparates y vitrinas para tiendas y locales comerciales en Madrid. Resultados impecables sin marcas. Presupuesto personalizado sin compromiso.",
     "url": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-tiendas-madrid.html",
-    "areaServed": { "@type": "City", "name": "Madrid" },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "telephone": "+34666771962",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
-    },
-    "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" } }
+    "provider": { "@id": "https://ormcristaleslimpios.vercel.app/#business" },
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" }
+    }
   }
   </script>
 

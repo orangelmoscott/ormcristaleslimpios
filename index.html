@@ -22,46 +22,60 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ormcristaleslimpios.vercel.app/">
 
-  <!-- Schema.org Markup for Google Maps / Local SEO -->
+  <!-- Schema.org JSON-LD / Local SEO -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "alternateName": "ORM Cristales",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "image": "https://ormcristaleslimpios.vercel.app/assets/limpiezadecristales.jpg",
-      "telephone": "+34666771962",
-      "description": "Profesionales expertos en limpieza de cristales a domicilio, oficinas, tiendas, restaurantes y pistas de pádel en Madrid y alrededores.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Madrid",
-        "addressRegion": "Madrid",
-        "addressCountry": "ES"
-      },
-      "priceRange": "$$",
-      "areaServed": "Madrid",
-      "sameAs": [
-        "https://www.google.com/maps/place/ORMLimpiezadeCristales/@40.4379543,-3.6795367,11z"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de Limpieza de Cristales",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de cristales en tiendas y comercios Madrid" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de cristales en oficinas y edificios Madrid" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de cristales en restaurantes Madrid" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de cristales en pistas de pádel Madrid" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de cristales en domicilios y viviendas Madrid" } }
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "4"
-      }
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://ormcristaleslimpios.vercel.app/#business",
+    "name": "ORMLimpiezadeCristales",
+    "alternateName": "ORM Cristales",
+    "url": "https://ormcristaleslimpios.vercel.app/",
+    "image": "https://ormcristaleslimpios.vercel.app/assets/limpiezadecristales.jpg",
+    "logo": "https://ormcristaleslimpios.vercel.app/favicon.svg",
+    "telephone": "+34666771962",
+    "description": "Profesionales expertos en limpieza de cristales a domicilio, oficinas, tiendas, restaurantes y pistas de pádel en Madrid y alrededores.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madrid",
+      "addressRegion": "Madrid",
+      "addressCountry": "ES"
+    },
+    "priceRange": "€€",
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "14:00" }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps/place/ORMLimpiezadeCristales/@40.4379543,-3.6795367,11z"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios de Limpieza de Cristales",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-tiendas-madrid.html", "name": "Limpieza de cristales en tiendas y comercios Madrid" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-oficinas-madrid.html", "name": "Limpieza de cristales en oficinas y edificios Madrid" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-restaurantes-madrid.html", "name": "Limpieza de cristales en restaurantes Madrid" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-padel-madrid.html", "name": "Limpieza de cristales en pistas de pádel Madrid" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-domicilios-madrid.html", "name": "Limpieza de cristales en domicilios y viviendas Madrid" } }
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "4",
+      "bestRating": "5",
+      "worstRating": "1"
     }
-    </script>
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -22,19 +22,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Limpieza de cristales para oficinas y edificios",
+    "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-oficinas-madrid.html#service",
+    "serviceType": "Limpieza de Cristales para Oficinas y Edificios",
     "name": "Limpieza de Cristales en Oficinas y Edificios Madrid",
-    "description": "Servicio profesional de limpieza de cristales para oficinas, sedes corporativas y edificios en Madrid. Resultados impecables con mínima interrupción.",
+    "description": "Servicio profesional de limpieza de cristales para oficinas, sedes corporativas, coworkings y edificios en Madrid. Fachadas impecables que proyectan profesionalidad. Presupuesto sin compromiso.",
     "url": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-oficinas-madrid.html",
-    "areaServed": { "@type": "City", "name": "Madrid" },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "telephone": "+34666771962",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
-    },
-    "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" } }
+    "provider": { "@id": "https://ormcristaleslimpios.vercel.app/#business" },
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" }
+    }
   }
   </script>
 

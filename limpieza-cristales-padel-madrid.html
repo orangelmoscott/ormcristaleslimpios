@@ -22,19 +22,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Limpieza de cristales para pistas de pádel",
+    "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-padel-madrid.html#service",
+    "serviceType": "Limpieza de Cristales para Pistas de Pádel",
     "name": "Limpieza de Cristales en Pistas de Pádel Madrid",
-    "description": "Servicio especializado en limpieza de cristales panorámicos para pistas de pádel y clubes deportivos en Madrid. Máxima transparencia y visibilidad garantizada.",
+    "description": "Servicio especializado en limpieza de cristales panorámicos para pistas de pádel y clubes deportivos en Madrid. Máxima transparencia para el juego y aspecto profesional garantizado. Presupuesto sin compromiso.",
     "url": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-padel-madrid.html",
-    "areaServed": { "@type": "City", "name": "Madrid" },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "telephone": "+34666771962",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
-    },
-    "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" } }
+    "provider": { "@id": "https://ormcristaleslimpios.vercel.app/#business" },
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" }
+    }
   }
   </script>
 

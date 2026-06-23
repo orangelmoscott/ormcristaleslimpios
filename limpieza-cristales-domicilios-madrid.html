@@ -22,19 +22,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Limpieza de cristales a domicilio",
+    "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-domicilios-madrid.html#service",
+    "serviceType": "Limpieza de Cristales a Domicilio",
     "name": "Limpieza de Cristales en Domicilios y Viviendas Madrid",
-    "description": "Servicio profesional de limpieza de cristales a domicilio para viviendas, pisos, chalets y apartamentos en Madrid. Ventanas, terrazas y claraboyas impecables.",
+    "description": "Servicio profesional de limpieza de cristales a domicilio para viviendas, pisos, chalets y apartamentos en Madrid. Ventanas, terrazas y claraboyas impecables. Presupuesto personalizado sin compromiso.",
     "url": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-domicilios-madrid.html",
-    "areaServed": { "@type": "City", "name": "Madrid" },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "telephone": "+34666771962",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
-    },
-    "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" } }
+    "provider": { "@id": "https://ormcristaleslimpios.vercel.app/#business" },
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" }
+    }
   }
   </script>
 

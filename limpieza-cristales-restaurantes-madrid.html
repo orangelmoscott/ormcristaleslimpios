@@ -22,19 +22,24 @@
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Limpieza de cristales para restaurantes y hostelería",
+    "@id": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-restaurantes-madrid.html#service",
+    "serviceType": "Limpieza de Cristales para Restaurantes y Hostelería",
     "name": "Limpieza de Cristales en Restaurantes Madrid",
-    "description": "Servicio profesional de limpieza de cristales para restaurantes, cafeterías, bares y locales de hostelería en Madrid.",
+    "description": "Servicio profesional de limpieza de cristales para restaurantes, cafeterías, bares y locales de hostelería en Madrid. Fachadas y escaparates impecables para tu negocio. Presupuesto sin compromiso.",
     "url": "https://ormcristaleslimpios.vercel.app/limpieza-cristales-restaurantes-madrid.html",
-    "areaServed": { "@type": "City", "name": "Madrid" },
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "ORMLimpiezadeCristales",
-      "telephone": "+34666771962",
-      "url": "https://ormcristaleslimpios.vercel.app/",
-      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" }
-    },
-    "offers": { "@type": "Offer", "priceCurrency": "EUR", "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" } }
+    "provider": { "@id": "https://ormcristaleslimpios.vercel.app/#business" },
+    "areaServed": [
+      { "@type": "City", "name": "Madrid" },
+      { "@type": "City", "name": "Alcobendas" },
+      { "@type": "City", "name": "Pozuelo de Alarcón" },
+      { "@type": "City", "name": "Getafe" },
+      { "@type": "City", "name": "Leganés" }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "EUR",
+      "priceSpecification": { "@type": "PriceSpecification", "description": "Presupuesto personalizado sin compromiso" }
+    }
   }
   </script>
 
