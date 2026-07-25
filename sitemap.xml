@@ -2,51 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://ormcristaleslimpios.vercel.app/</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://ormlimpiezadecristales.es/</loc>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://ormcristaleslimpios.vercel.app/assets/limpiezadecristales.jpg</image:loc>
-      <image:title>Limpieza de cristales profesional ORM Cristales</image:title>
+      <image:loc>https://ormlimpiezadecristales.es/assets/limpieza-cristales-altura-hero-madrid.webp</image:loc>
+      <image:title>Cristaleros de ORM Cristales trabajando en altura en Madrid</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://ormcristaleslimpios.vercel.app/assets/limpiezadecristalesmadird.jpg</image:loc>
-      <image:title>Servicio de limpieza de cristales en Madrid</image:title>
+      <image:loc>https://ormlimpiezadecristales.es/assets/limpieza-cristales-fachada-oficinas-madrid.webp</image:loc>
+      <image:title>Fachada de oficinas en Madrid limpia tras el servicio de ORM Cristales</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://ormcristaleslimpios.vercel.app/assets/cristaleslimpios.jpg</image:loc>
-      <image:title>Cristales limpios y brillantes</image:title>
+      <image:loc>https://ormlimpiezadecristales.es/assets/orm-cristales-foto-trabajo-04.webp</image:loc>
+      <image:title>Ventana de vivienda en Madrid limpia por ORM Cristales</image:title>
     </image:image>
   </url>
   <url>
-    <loc>https://ormcristaleslimpios.vercel.app/limpieza-cristales-tiendas-madrid.html</loc>
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-tiendas-madrid.html</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ormcristaleslimpios.vercel.app/limpieza-cristales-oficinas-madrid.html</loc>
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-oficinas-madrid.html</loc>
+    <lastmod>2026-07-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ormlimpiezadecristales.es/assets/cristaleros-limpieza-altura-edificio-oficinas-madrid.webp</image:loc>
+      <image:title>Cristaleros trabajando en altura en un edificio de oficinas en Madrid</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-restaurantes-madrid.html</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ormcristaleslimpios.vercel.app/limpieza-cristales-restaurantes-madrid.html</loc>
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-padel-madrid.html</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ormcristaleslimpios.vercel.app/limpieza-cristales-padel-madrid.html</loc>
-    <lastmod>2026-06-23</lastmod>
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-domicilios-madrid.html</loc>
+    <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ormcristaleslimpios.vercel.app/limpieza-cristales-domicilios-madrid.html</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://ormlimpiezadecristales.es/assets/orm-cristales-foto-trabajo-01.webp</image:loc>
+      <image:title>Ventana de vivienda en Madrid limpia por ORM Cristales</image:title>
+    </image:image>
   </url>
 </urlset>

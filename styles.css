@@ -1151,3 +1151,50 @@ a.service-card:hover .service-link {
     gap: 1rem;
   }
 }
+/* ===== Galería de fotos reales ===== */
+.real-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.real-gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+@media (max-width: 768px) {
+  .real-gallery {
+    grid-template-columns: 1fr;
+  }
+  .real-gallery img {
+    height: 240px;
+  }
+}
+
+/* ===== Galería de vídeos reales ===== */
+.video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.video-gallery video {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  background: #000;
+}
+
+@media (max-width: 768px) {
+  .video-gallery video {
+    height: 260px;
+  }
+}
