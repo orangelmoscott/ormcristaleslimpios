@@ -27,6 +27,7 @@
   </url>
   <url>
     <loc>https://ormlimpiezadecristales.es/limpieza-cristales-oficinas-madrid.html</loc>
+<<<<<<< HEAD
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,11 +38,27 @@
   </url>
   <url>
     <loc>https://ormlimpiezadecristales.es/limpieza-cristales-restaurantes-madrid.html</loc>
+=======
+>>>>>>> 145c718 (fix(seo): update canonical URLs, sitemap, and robots.txt to point to primary domain ormlimpiezadecristales.es)
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+<<<<<<< HEAD
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-padel-madrid.html</loc>
+=======
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-restaurantes-madrid.html</loc>
+>>>>>>> 145c718 (fix(seo): update canonical URLs, sitemap, and robots.txt to point to primary domain ormlimpiezadecristales.es)
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+<<<<<<< HEAD
+    <loc>https://ormlimpiezadecristales.es/limpieza-cristales-domicilios-madrid.html</loc>
+    <lastmod>2026-07-25</lastmod>
+=======
     <loc>https://ormlimpiezadecristales.es/limpieza-cristales-padel-madrid.html</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -49,7 +66,8 @@
   </url>
   <url>
     <loc>https://ormlimpiezadecristales.es/limpieza-cristales-domicilios-madrid.html</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-06-23</lastmod>
+>>>>>>> 145c718 (fix(seo): update canonical URLs, sitemap, and robots.txt to point to primary domain ormlimpiezadecristales.es)
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
